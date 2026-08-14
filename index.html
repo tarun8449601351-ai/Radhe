@@ -1,112 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RVO ~ TARUN VIP OFFICIAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RVO ~ TARUN VIP OFFICIAL</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    html,body{
-      width:100%;
-      min-height:100%;
-      font-family:Poppins,sans-serif;
-    }
+html,body{
+  width:100%;
+  min-height:100%;
+}
 
-    body{
-      min-height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      background:
-        radial-gradient(circle at 50% 42%, #063b50 0%, #031925 25%, #020c15 58%, #010811 100%);
-      overflow:hidden;
-    }
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 50% 45%, #073c50 0%, #041b29 30%, #020d17 65%, #010811 100%);
+  font-family:Poppins,sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow-x:hidden;
+}
 
-    .page{
-      width:100%;
-      max-width:430px;
-      min-height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      padding:28px 18px;
-      position:relative;
-    }
+.wrapper{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
 
-    .card{
-      width:100%;
-      max-width:390px;
-      min-height:820px;
-      border:1px solid rgba(0,229,255,.28);
-      border-radius:36px;
-      background:
-        radial-gradient(circle at 50% 28%, rgba(0,210,255,.14), transparent 30%),
-        linear-gradient(145deg,rgba(9,28,42,.94),rgba(3,17,28,.97));
-      box-shadow:
-        0 0 25px rgba(0,217,255,.08),
-        inset 0 0 35px rgba(0,217,255,.035);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      padding:78px 25px 45px;
-    }
+/* MAIN SQUARE CARD */
+.card{
+  width:min(88vw,390px);
+  aspect-ratio:1 / 1;
+  border:1px solid rgba(0,220,255,.30);
+  border-radius:34px;
 
-    /* TARUN LOGO */
-    .logo{
-      width:190px;
-      height:190px;
-      border-radius:50%;
-      background:#000;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      position:relative;
-      box-shadow:
-        0 0 12px #00d9ff,
-        0 0 40px rgba(0,217,255,.55);
-      margin-bottom:68px;
-      overflow:hidden;
-    }
+  background:
+    radial-gradient(circle at 50% 35%,
+      rgba(0,210,255,.13),
+      transparent 34%),
+    linear-gradient(
+      145deg,
+      rgba(8,28,42,.97),
+      rgba(2,15,25,.98)
+    );
 
-    .logo::before{
-      content:"";
-      position:absolute;
-      width:125px;
-      height:4px;
-      background:#e90000;
-      transform:rotate(-8deg);
-      top:58px;
-      left:32px;
-      box-shadow:0 0 8px #e90000;
-    }
+  box-shadow:
+    0 0 25px rgba(0,210,255,.08),
+    inset 0 0 40px rgba(0,210,255,.035);
 
-    .trade{
-      color:#fff;
-      font-size:30px;
-      font-weight:800;
-      font-style:italic;
-      line-height:1;
-      z-index:2;
-      text-shadow:2px 2px 0 #222;
-    }
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 
-    .with{
-      color:#ff2424;
-      font-size:10px;
-      font-weight:800;
-      letter-spacing:2px;
-      margin:4px 0;
-      z-index:2;
-    }
+  padding:30px 25px;
+}
+
+/* LOGO */
+.logo{
+  width:135px;
+  height:135px;
+  border-radius:50%;
+  background:#000;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  position:relative;
+  overflow:hidden;
+
+  box-shadow:
+    0 0 14px #00d9ff,
+    0 0 40px rgba(0,217,255,.55);
+
+  margin-bottom:30px;
+}
+
+.logo:before{
+  content:"";
+  position:absolute;
+  width:90px;
+  height:3px;
+  background:#ed1717;
+  top:43px;
+  left:22px;
+  transform:rotate(-8deg);
+  box-shadow:0 0 7px #ed1717;
+}
+
+.trade{
+  color:white;
+  font-size:22px;
+  font-weight:800;
+  font-style:italic;
+  line-height:1;
+  z-index:2;
+  text-shadow:2px 2px #222;
+}
+
+.with{
+  color:#ff2929;
+  font-size:7px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  margin:3px 0;
+  z-index:2;
+}
+
+.tarun{
+  color:#ffb000;
+  font-family:"Roboto Slab",serif;
+  font-size:23px;
+  font-weight:800;
+  font-style:italic;
+  line-height:1;
+  z-index:2;
+  text-shadow:2px 2px #642500;
+}
+
+/* HEADLINE */
+h1{
+  text-align:center;
+  color:#5deaff;
+
+  font-family:"Roboto Slab",serif;
+  font-size:30px;
+  line-height:1.15;
+  font-weight:800;
+  letter-spacing:.5px;
+
+  text-shadow:
+    0 0 7px #00d9ff,
+    0 0 18px rgba(0,217,255,.8),
+    0 0 35px rgba(0,217,255,.3);
+
+  margin-bottom:25px;
+}
+
+/* MEMBERS */
+.members{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+
+  color:#9cafc0;
+  font-size:13px;
+
+  margin-bottom:27px;
+}
+
+.members strong{
+  color:#fff;
+  font-size:18px;
+}
+
+.dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:#08d9f8;
+  box-shadow:0 0 12px #00d9ff;
+}
+
+/* TELEGRAM BUTTON */
+.join{
+  width:100%;
+  height:62px;
+
+  border-radius:50px;
+  border:none;
+
+  background:linear-gradient(
+    90deg,
+    #099eb7,
+    #13abc5
+  );
+
+  color:#061522;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+
+  font-size:17px;
+  font-weight:800;
+
+  text-decoration:none;
+
+  box-shadow:
+    0 0 18px rgba(0,217,255,.25),
+    0 10px 30px rgba(0,217,255,.12);
+
+  transition:.2s;
+}
+
+.join:active{
+  transform:scale(.97);
+}
+
+.telegram{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+
+  background:#071827;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#18b9e8;
+  font-size:22px;
+}
+
+/*    }
 
     .tarun{
       color:#ffb000;
