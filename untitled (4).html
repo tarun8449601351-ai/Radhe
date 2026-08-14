@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RVO ~ TARUN VIP OFFICIAL</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html,body{
+      width:100%;
+      min-height:100%;
+      font-family:Poppins,sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:
+        radial-gradient(circle at 50% 42%, #063b50 0%, #031925 25%, #020c15 58%, #010811 100%);
+      overflow:hidden;
+    }
+
+    .page{
+      width:100%;
+      max-width:430px;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:28px 18px;
+      position:relative;
+    }
+
+    .card{
+      width:100%;
+      max-width:390px;
+      min-height:820px;
+      border:1px solid rgba(0,229,255,.28);
+      border-radius:36px;
+      background:
+        radial-gradient(circle at 50% 28%, rgba(0,210,255,.14), transparent 30%),
+        linear-gradient(145deg,rgba(9,28,42,.94),rgba(3,17,28,.97));
+      box-shadow:
+        0 0 25px rgba(0,217,255,.08),
+        inset 0 0 35px rgba(0,217,255,.035);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:78px 25px 45px;
+    }
+
+    /* TARUN LOGO */
+    .logo{
+      width:190px;
+      height:190px;
+      border-radius:50%;
+      background:#000;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      position:relative;
+      box-shadow:
+        0 0 12px #00d9ff,
+        0 0 40px rgba(0,217,255,.55);
+      margin-bottom:68px;
+      overflow:hidden;
+    }
+
+    .logo::before{
+      content:"";
+      position:absolute;
+      width:125px;
+      height:4px;
+      background:#e90000;
+      transform:rotate(-8deg);
+      top:58px;
+      left:32px;
+      box-shadow:0 0 8px #e90000;
+    }
+
+    .trade{
+      color:#fff;
+      font-size:30px;
+      font-weight:800;
+      font-style:italic;
+      line-height:1;
+      z-index:2;
+      text-shadow:2px 2px 0 #222;
+    }
+
+    .with{
+      color:#ff2424;
+      font-size:10px;
+      font-weight:800;
+      letter-spacing:2px;
+      margin:4px 0;
+      z-index:2;
+    }
+
+    .tarun{
+      color:#ffb000;
+      font-family:"Roboto Slab",serif;
+      font-size:31px;
+      font-weight:800;
+      font-style:italic;
+      line-height:1;
+      z-index:2;
+      text-shadow:2px 2px 0 #6b2500;
+    }
+
+    /* HEADLINE */
+    h1{
+      text-align:center;
+      color:#5eeaff;
+      font-family:"Roboto Slab",serif;
+      font-size:38px;
+      line-height:1.18;
+      font-weight:800;
+      letter-spacing:1px;
+      text-shadow:
+        0 0 7px #00d9ff,
+        0 0 20px rgba(0,217,255,.8),
+        0 0 40px rgba(0,217,255,.35);
+      margin-bottom:58px;
+    }
+
+    /* MEMBERS */
+    .members{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      margin-bottom:70px;
+      color:#a2b4c5;
+      font-size:17px;
+    }
+
+    .members strong{
+      color:#fff;
+      font-size:23px;
+    }
+
+    .dot{
+      width:18px;
+      height:18px;
+      background:#08d9f8;
+      border-radius:50%;
+      box-shadow:0 0 12px #00d9ff;
+    }
+
+    /* BUTTON */
+    .join{
+      width:100%;
+      height:82px;
+      border:0;
+      border-radius:50px;
+      background:linear-gradient(90deg,#0ba0b9,#13abc5);
+      color:#061522;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      font-size:22px;
+      font-weight:800;
+      text-decoration:none;
+      box-shadow:
+        0 0 15px rgba(0,217,255,.3),
+        0 10px 35px rgba(0,217,255,.15);
+      transition:.2s;
+    }
+
+    .join:active{
+      transform:scale(.97);
+    }
+
+    .telegram{
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      background:#071827;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#19b9e8;
+      font-size:27px;
+    }
+
+    @media(max-height:850px){
+      .card{
+        min-height:760px;
+        padding-top:55px;
+      }
+
+      .logo{
+        width:160px;
+        height:160px;
+        margin-bottom:48px;
+      }
+
+      .trade{font-size:26px}
+      .tarun{font-size:27px}
+
+      h1{
+        font-size:32px;
+        margin-bottom:45px;
+      }
+
+      .members{
+        margin-bottom:50px;
+      }
+
+      .join{
+        height:72px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+    <section class="card">
+
+      <div class="logo">
+        <div class="trade">TRADE</div>
+        <div class="with">WITH</div>
+        <div class="tarun">TARUN</div>
+      </div>
+
+      <h1>
+        RVO ~ TARUN VIP<br>
+        OFFICIAL
+      </h1>
+
+      <div class="members">
+        <span class="dot"></span>
+        <strong>38,000+</strong>
+        <span>Active Members</span>
+      </div>
+
+      <a
+        class="join"
+        href="https://t.me/+1cG3O5awBpkzN2Q1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="telegram">➤</span>
+        JOIN TELEGRAM
+      </a>
+
+    </section>
+  </main>
+
+</body>
+</html>
